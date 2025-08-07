@@ -137,7 +137,7 @@ export function Allergies({ allergies, setAllergies }: {
       </div>
 
       {allergies.length > 0 ? (
-        <ul className="space-y-3">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {allergies.map(allergy => (
             <li 
               key={allergy.id}
