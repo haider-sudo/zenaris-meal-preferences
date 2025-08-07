@@ -45,18 +45,19 @@ export default function App() {
   return (
     <div className="min-h-screen bg-blue-50 p-4 md:p-8">
       <div className="max-w-4xl mx-auto space-y-6">
-        <header className="flex items-center gap-4 p-4">
+        <div className="flex justify-center py-2">
           <img
             src="/zenaris-logo.png"
             alt="Zenaris Logo"
-            className="h-12 w-auto"
+            className="h-10 w-auto"
           />
-          <div className="text-left">
-            <h2 className="text-2xl font-semibold text-black">Meal Preferences</h2>
-          </div>
-        </header>
+        </div>
 
         <ProfileHeader userProfile={userProfile} />
+
+        <div className="px-2 py-4">
+          <h2 className="text-2xl font-semibold text-black">Meal Preferences</h2>
+        </div>
 
         <FavoriteFoods foods={favoriteFoods} setFoods={setFavoriteFoods} />
         <DislikedFoods foods={dislikedFoods} setFoods={setDislikedFoods} />
