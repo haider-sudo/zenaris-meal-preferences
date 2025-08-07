@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-50 p-4 md:p-8">
+    <div className="min-h-screen bg-[#F5F3EB] p-4 md:p-8">
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="flex justify-center py-2">
           <img
