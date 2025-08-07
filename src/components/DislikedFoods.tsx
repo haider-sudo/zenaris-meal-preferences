@@ -115,7 +115,7 @@ export function DislikedFoods({ foods, setFoods }: {
       </div>
 
       {foods.length > 0 ? (
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <ul className="grid grid-cols-1 gap-2">
           {foods.map(food => (
             <li 
               key={food.id}

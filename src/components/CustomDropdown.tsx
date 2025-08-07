@@ -93,7 +93,7 @@ export function CustomDropdown({
 
       {isOpen && (
         <div className={`absolute z-50 w-full mt-1 border-2 rounded-lg ${currentTheme.dropdown} max-h-60 overflow-y-auto`}>
-          {options.map((option, index) => (
+          {options.map((option) => (
             <div
               key={option.value}
               onClick={() => handleOptionClick(option)}

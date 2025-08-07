@@ -132,7 +132,7 @@ export function FavoriteFoods({ foods, setFoods }: {
                   <CategoryIcon category={category} className="w-5 h-5 text-green-600" />
                   {category}
                 </h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <ul className="grid grid-cols-1 gap-2">
                   {categoryFoods.map(food => (
                     <li key={food.id} className="flex justify-between items-center bg-white p-3 rounded border border-green-100">
                       {editingId === food.id ? (

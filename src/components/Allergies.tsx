@@ -22,10 +22,10 @@ export function Allergies({ allergies, setAllergies }: {
   setAllergies: (allergies: Allergy[]) => void;
 }) {
   const [newAllergy, setNewAllergy] = useState('');
-  const [severity, setSeverity] = useState<'mild' | 'moderate' | 'severe'>('moderate');
+  const [severity, setSeverity] = useState<'mild' | 'moderate' | 'severe'>('mild');
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editName, setEditName] = useState('');
-  const [editSeverity, setEditSeverity] = useState<'mild' | 'moderate' | 'severe'>('moderate');
+  const [editSeverity, setEditSeverity] = useState<'mild' | 'moderate' | 'severe'>('mild');
   const [editIsCommon, setEditIsCommon] = useState(false);
 
   const addAllergy = (name: string, isCommon: boolean) => {
@@ -137,7 +137,7 @@ export function Allergies({ allergies, setAllergies }: {
       </div>
 
       {allergies.length > 0 ? (
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <ul className="grid grid-cols-1 gap-2">
           {allergies.map(allergy => (
             <li 
               key={allergy.id}
